@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm -rf build/
+mkdir build/
+cd build
+../configure    --prefix=/usr     --sysconfdir=/etc     --localstatedir=/var     --libexecdir=/usr/lib/qemu     --python=/usr/bin/python2     --smbd=/usr/bin/smbd     --with-gtkabi=3.0     --with-sdlabi=2.0     --enable-modules     --enable-jemalloc   --enable-debug --target-list=x86_64-softmmu --enable-virtfs
+make
